@@ -1,0 +1,49 @@
+{
+  "name": "@big-whale-labs/poseidon",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigWhaleLabs/poseidon"
+  },
+  "type": "module",
+  "types": "types.d.ts",
+  "main": "./main.cjs",
+  "module": "./src/main.js",
+  "exports": {
+    "import": "./main.js",
+    "require": "./dist/main.cjs"
+  },
+  "np": {
+    "2fa": false,
+    "tests": false,
+    "cleanup": false,
+    "yarn": false
+  },
+  "scripts": {
+    "release": "np",
+    "build": "rollup -c rollup.cjs.config.js",
+    "pretty": "prettier --check src",
+    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.51"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "np": "^7.6.1",
+    "prettier": "^2.6.2",
+    "rollup": "^2.70.2"
+  },
+  "_moduleAliases": {
+    "@": "dist"
+  },
+  "packageManager": "yarn@3.1.0"
+}
