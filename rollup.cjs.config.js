@@ -5,9 +5,9 @@ import json from "@rollup/plugin-json";
 const pkg = JSON.parse(fs.readFileSync("./package.json"));
 
 export default {
-  input: "./main.js",
+  input: "./src/poseidon.js",
   output: {
-    file: "dist/main.cjs",
+    file: "dist/poseidon.cjs",
     format: "cjs",
   },
   external: [...Object.keys(pkg.dependencies), ...builtin],

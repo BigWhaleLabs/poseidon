@@ -8,17 +8,16 @@
   },
   "type": "module",
   "types": "types.d.ts",
-  "main": "./main.cjs",
-  "module": "./src/main.js",
+  "main": "./dist/poseidon.cjs",
+  "module": "./src/poseidon.js",
   "files": [
     "dist",
     "src",
-    "main.cjs",
     "types.d.ts"
   ],
   "exports": {
-    "import": "./main.js",
-    "require": "./dist/main.cjs"
+    "import": "./src/poseidon.js",
+    "require": "./dist/poseidon.cjs"
   },
   "np": {
     "2fa": false,
@@ -30,8 +29,7 @@
   "scripts": {
     "release": "np",
     "build": "rollup -c rollup.cjs.config.js",
-    "pretty": "prettier --check src",
-    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "big-integer": "^1.6.51"
