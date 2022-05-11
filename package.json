@@ -10,6 +10,12 @@
   "types": "types.d.ts",
   "main": "./main.cjs",
   "module": "./src/main.js",
+  "files": [
+    "./dist",
+    "./src",
+    "./main.cjs",
+    "./types.d.ts"
+  ],
   "exports": {
     "import": "./main.js",
     "require": "./dist/main.cjs"
