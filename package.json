@@ -24,7 +24,7 @@
     "2fa": false,
     "tests": false,
     "cleanup": false,
-    "yarn": false
+    "access": "restricted"
   },
   "scripts": {
     "release": "np",
