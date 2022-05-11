@@ -11,10 +11,10 @@
   "main": "./main.cjs",
   "module": "./src/main.js",
   "files": [
-    "./dist",
-    "./src",
-    "./main.cjs",
-    "./types.d.ts"
+    "dist",
+    "src",
+    "main.cjs",
+    "types.d.ts"
   ],
   "exports": {
     "import": "./main.js",
