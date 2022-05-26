@@ -1,7 +1,10 @@
+# Poseidon
+
 ## Installation
 
-`yarn add @big-whale-labs/poseidon` or `npm i @big-whale-labs/poseidon`
+`yarn add @big-whale-labs/poseidon`
 
-## Local launch
+## Available Scripts
 
-1. Install dependencies with `yarn`
+- `yarn build` — builds poseidon lib
+- `yarn release` — create a release and publish the package
