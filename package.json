@@ -29,7 +29,8 @@
   "scripts": {
     "release": "np",
     "build": "rollup -c rollup.cjs.config.js",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "lint": "echo 'No linter set'"
   },
   "dependencies": {
     "big-integer": "^1.6.51"
