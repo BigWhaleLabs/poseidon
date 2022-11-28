@@ -36,20 +36,20 @@
     "big-integer": "^1.6.51"
   },
   "devDependencies": {
-    "@rollup/plugin-json": "^4.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.27.1",
-    "@typescript-eslint/parser": "^5.27.1",
-    "eslint": "^8.17.0",
+    "@rollup/plugin-json": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
-    "np": "^7.6.1",
-    "prettier": "^2.6.2",
-    "rollup": "^2.75.6"
+    "np": "^7.6.2",
+    "prettier": "^2.8.0",
+    "rollup": "^3.5.0"
   },
   "_moduleAliases": {
     "@": "dist"
   },
-  "packageManager": "yarn@3.1.0"
+  "packageManager": "yarn@3.3.0"
 }
